@@ -45,9 +45,10 @@ public class User {
 
 
     /**
-     * A default constructor is required by serialisation and ORM API's.
+     * A default constructor is required by serialisation and ORM's. It is protected to limit it's use outside of these
+     * frameworks.
      */
-    public User() {
+    protected User() {
     }
 
     /**
