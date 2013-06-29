@@ -36,6 +36,8 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
+                <!-- Using version 2.1.1 of the maven-war-plugin because it works with Java 7. -->
+                <version>2.1.1</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
@@ -43,7 +45,7 @@
             <plugin>
                 <groupId>org.apache.openejb.maven</groupId>
                 <artifactId>tomee-maven-plugin</artifactId>
-                <version>1.5.2</version>
+                <version>1.6.0-SNAPSHOT</version>
                 <configuration>
                     <!-- Have to enable JAX-RS support in TomEE. -->
                     <tomeeClassifier>jaxrs</tomeeClassifier>
@@ -68,4 +70,11 @@
             <url>https://repository.apache.org/content/groups/snapshots/</url>
         </repository>
     </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>apache-snapshot</id>
+            <name>Apache Snapshot Repository</name>
+            <url>https://repository.apache.org/content/groups/snapshots/</url>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
