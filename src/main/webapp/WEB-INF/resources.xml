@@ -1,6 +1,6 @@
 <resources>
-    <!-- This configuration tells the TomEE JSON serialiser CXF. It tells it to drop the root node when serialising a -->
-    <!-- object. It also tells it to accept JSON that does not contain a root node. -->
+    <!-- This configuration tells the TomEE JSON serialiser Apache CXF. It tells it to drop the root node when -->
+    <!-- serialising a object. It also tells it to accept JSON that does not contain a root node. -->
     <Service id="json" class-name="org.apache.cxf.jaxrs.provider.json.JSONProvider">
         dropRootElement = true
         supportUnwrapped = true
