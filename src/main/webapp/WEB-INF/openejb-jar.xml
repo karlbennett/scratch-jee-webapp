@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <openejb-jar xmlns="http://www.openejb.org/openejb-jar/1.1">
+    <!-- This is some custom TomEE (OpenEJB) configuration to tell the container that the ScratchController produces -->
+    <!-- JSON. It is needed to enable the configuration of the JSONProvider in the resources.xml file.-->
     <pojo-deployment class-name="scratch.webapp.jee.controller.ScratchController">
         <properties>
             cxf.jaxrs.providers = json
