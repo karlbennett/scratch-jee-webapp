@@ -21,7 +21,9 @@ import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 public class ScratchController {
 
     /**
-     * This is the JPA entity manager that will be used to persist the {@link User} objects.
+     * This is the JPA entity manager that will be used to persist the {@link User} objects. Currently using it
+     * directly, but will move it into a data resource object and then try to make the {@link User} class a proper
+     * domain object.
      */
     @PersistenceContext(unitName = "users-pu")
     private EntityManager entityManager;
