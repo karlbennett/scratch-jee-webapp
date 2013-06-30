@@ -33,7 +33,7 @@ It is also possible to carry out CRUD operation on simple users:
     $ curl -XDELETE http://localhost:8080/scratch-jee-webapp/scratch/users/1
 
 
-The  webapp contains only two classes:
+The webapp only contains two classes:
 
 The controller class that handles the `/scratch-jee-webapp/scratch/`, `/scratch-jee-webapp/scratch/users`, and
 `/scratch-jee-webapp/scratch/users/{id}` request mappings.
